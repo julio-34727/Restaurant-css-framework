@@ -1,5 +1,4 @@
 /* CSS fonts */
-@import url("https://fonts.googleapis.com/css?family=Grand+Hotel&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Trocchi:regular");
 
 body {font-family: "Trocchi", Arial, Helvetica, "Nimbus Sans L", sans-serif;}
@@ -122,17 +121,10 @@ header {
 .banner-ordered > * {
     width: 280px;
     color: var(--wine);
-    /* font-weight: bold;   */
 }
 
-/*
- .banner-loc {
-    background-color: hsla(0,0%,100%,.3); 
-} 
-*/
-
 /* Rules for promo */
-#promo del {color: red;}
+#promo del {color: brown;}
 
 /* Rules for all sections */
 .main-content__title {
