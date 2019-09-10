@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="description" content="A brief page description" />
+        <meta name="keywords" content="html, cheatsheet" />
+        <meta name="author" content="Julio ZINGA" />
+        <title>Johnson's restaurant</title>
+        <link rel="icon" href="assets/im/johnson-ico.png" sizes="16x16" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+        <script src="https://kit.fontawesome.com/5d82493348.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="assets/js/index.js"></script>
+        <link rel="stylesheet" href="assets/css/index.css" />
+    </head>
+    <body>
+        <!-- header -->
+        <header>  
+            <!-- navbar -->
+            <nav class="navbar navbar-expand-lg fixed-top nav-menu">
+                <div class="container">
+                    <a class="navbar-brand d-flex logo" href="index.html">
+                        <div class="logo__im d-none d-sm-block mr-2">
+                            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M 16,40 a 25,25 0 1,1 0,1 z" id="circle" />
+                                <text><textPath xlink:href="#circle">Johnson 4.14-becode&#11088;</textPath></text>
+                            </svg>
+                        </div>
+                        <div class="logo__body text-dark">
+                            <h1 class="logo__title h2">Johnson Sprl</h1>
+                            <p class="logo__ratings small text-uppercase"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <span>Becode certified</span></p>
+                        </div>
+                    </a>
+                    <button class="navbar-toggler nav-button pb-3" type="button" data-toggle="collapse" data-target="#hidden-nav" aria-controls="hidden-nav"    
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                        <!-- <span class="navbar-toggler-icon"><i class="fas fa-bars fa-2x"></i></span> -->
+                    </button>
+                    <!-- Menu items -->
+                    <div class="collapse navbar-collapse justify-content-end text-uppercase font-weight-bold" id="hidden-nav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item text-md-center">
+                                <a class="nav-link menu-item menu-active" href="index.html"><i class="fas fa-home"></i> Welcome <span class="sr-only">(current)</span></a></li>
+                            <li class="nav-item text-md-center">
+                                <a class="nav-link menu-item" href="menu.html"><i class="fas fa-utensils"></i> Menu</a></li>
+                            <li class="nav-item text-md-center">
+                                <a class="nav-link menu-item" href="pictures.html"><i class="fas fa-camera-retro"></i> Pictures</a></li>
+                            <li class="nav-item text-md-center">
+                                <a class="nav-link menu-item" href="restaurant.html"><i class="fas fa-map-marker-alt"></i> Restaurant</a></li>
+                            <li class="nav-item text-md-center">
+                                <a class="nav-link menu-item" href="contact.html"><i class="fas fa-address-book"></i> Contact</a></li> 
+                        </ul>
+                    </div> 
+                </div> 
+                <!-- Menu items --> 
+            </nav>
+            <!-- end of navbar -->
+
+            <!-- banner -->
+            <div class="banner text-center">
+                <h2 class="display-4 banner-heading blend-content">Johnson's restaurant</h2>
+                <p class="banner-par lead blend-content">Each night our goal is to share a composed menu that is stripped of pretension, carefully curated, and fun.</p>
+                <p class="banner-par banner-loc text-center shadow-lg border-bottom border-dark blend-content">
+                    Cantersteen 10,1000 Brussels Belgium <br> Tuesday &ndash; Sunday: 10PM – Close &amp; Monday: Closed</p>
+                <div class="banner-ordered d-flex flex-column align-items-center mt-3 display-4">
+                    <a class="banner-tel btn btn-lg btn-warning text-decoration-none mb-3"
+                            href="tel:+32-486-18-64-00"><i class="fas fa-phone-alt"></i> +32 486 18 64 00</a>
+                    <a class="banner-book btn btn-lg btn-warning mb-3" href="#"><i class="fas fa-book" aria-hidden="true"></i> Book</a>
+                    <a class="banner-delivery btn btn-lg btn-warning text-decoration-none mb-3" 
+                        href="https://www.ubereats.com/fr-BE/brussels/food-delivery/quick-anspach/c8FmBcQMR_ylim30BA_Plw/" 
+                        target="_blank" rel="noreferrer"><i class="fas fa-biking"></i> Uber Eats</a>
+                    <a class="banner-delivery btn btn-lg btn-warning text-decoration-none" 
+                        href="https://deliveroo.be/fr/menu/brussels/brouckere/quick-anspach?day=today&time=1130" 
+                        target="_blank" rel="noreferrer"><i class="fas fa-biking"></i> Deliveroo</a>
+                </div>
+            </div>
+            <!-- end of banner -->
+        </header>   
+        <!-- end of header -->
+
+        <main class="jumbotron jumbotron-fluid mb-0">
+            <!-- promo -->
+            <section class="main-content" id="promo">
+                <div class="wrapper container">
+                    <h3 class="main-content__title">Promo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nisi ex, adipisci sequi maiores quod saepe natus perspiciatis ad eligendi!</p>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex"><span>Burger</span> <span class="ml-auto"><del>&euro;5</del> &euro;3.25</span></li>
+                        <li class="list-group-item d-flex"><span>Becode soup</span> <span class="ml-auto"><del>&euro;7</del> &euro;5.25</span></li>
+                        <li class="list-group-item d-flex"><span>Spicy cool</span> <span class="ml-auto"><del>&euro;8</del> &euro;4.15</span></li>
+                        <li class="list-group-item d-flex"><span>Fish sala</span> <span class="ml-auto"><del>&euro;9</del> &euro;7.45</span></li>
+                    </ul>
+                </div>
+            </section>
+            <!-- end of promo -->
+
+            <!-- events -->
+            <section class="main-content" id="events">
+                <div class="wrapper container">
+                    <h3 class="main-content__title">Events</h3>
+                    <p class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate veritatis delectus dolores.</p>
+                    <div class="row">
+
+                        <!-- event 1 -->
+                        <div class="col-12 mb-3     ">
+                            <div class="event-card card">
+                                <div class="card-horizontal">
+                                    <div class="img-square-wrapper p-3"> 
+                                        <img class="img-fluid" src="assets/im/chef-1-400x300.jpg" alt="Top chef Marc Lee">   
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title h5 border-bottom pb-2">Dessert day</h4>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia architecto qui aperiam, odit enim distinctio voluptatem sapiente pariatur voluptatum repudiandae!</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-user-circle"></i> By Top chef <em>Marc Lee</em></li>
+                                        <li><i class="far fa-calendar-alt"></i> Sep. 25 2019</li>
+                                        <li><i class="fas fa-clock"></i> 10:30 - 12:30</li>
+                                        <li><i class="fas fa-map-marker-alt"></i> Business Hall No. 2 (Becentral)</li>
+                                        <li><a class="text-decoration-none" href="tel:+32-486-18-64-00"><i class="fas fa-phone-alt"></i> +32 486 18 64 00</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of event 1 -->
+
+                        <div class="col-12">
+                            <div class="event-card card">
+                                <div class="card-horizontal">
+                                    <div class="img-square-wrapper p-3"> 
+                                        <img class="img-fluid" src="assets/im/chef-2-400x300.jpg" alt="Chef Jeanne Mignot">   
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title h5 border-bottom pb-2">Free cooking day with the chef Jeanne!</h4>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia architecto qui aperiam, odit enim distinctio voluptatem sapiente pariatur voluptatum repudiandae!</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-user-circle"></i> By Chef <em>Jeanne Mignot</em></li>
+                                        <li><i class="far fa-calendar-alt"></i> Oct. 14 2019</li>
+                                        <li><i class="fas fa-clock"></i> 13:30 - 14:30</li>
+                                        <li><i class="fas fa-map-marker-alt"></i> Business Hall No. 2 (Becentral)</li>
+                                        <li><a class="text-decoration-none" href="tel:+32-486-18-64-00"><i class="fas fa-phone-alt"></i> +32 486 18 64 00</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section> 
+            <!-- end of events --> 
+
+            <!-- reviews --> 
+            <section  class="main-content" id="reviews">
+                <div class="wrapper container">
+                    <h3 class="main-content__title">Reviews</h3>
+                    <blockquote class="blockquote px-3">
+                        <p><i class="fas fa-quote-left text-secondary" aria-hidden="true"></i> It's the best restaurant in the central station. I highly recommend Johnson resto! <i class="fas fa-quote-right text-secondary" aria-hidden="true"></i></p>
+                        <footer class="blockquote-footer">Emily Parkers <time datetime="2019-08-25T12:35">(August 25 2019 12:35)</time></footer>
+                    </blockquote>
+                    <blockquote class="blockquote px-3">
+                        <p><i class="fas fa-quote-left text-secondary" aria-hidden="true"></i> It's the best restaurant in the central station. I highly recommend Johnson resto! <i class="fas fa-quote-right text-secondary" aria-hidden="true"></i></p>
+                        <footer class="blockquote-footer">Marc Jacob <time datetime="2019-09-04T12:35">(September 04 2019 14:30)</time></footer>
+                    </blockquote>
+                    <blockquote class="blockquote px-3">
+                        <p><i class="fas fa-quote-left text-secondary" aria-hidden="true"></i> It's the best restaurant in the central station. I highly recommend Johnson resto! <i class="fas fa-quote-right text-secondary" aria-hidden="true"></i></p>
+                        <footer class="blockquote-footer">Robert Kingston <time datetime="2019-09-04T12:35">(September 08 2019 17:30)</time></footer>
+                    </blockquote>
+                </div>
+            </section>
+            <!-- end of reviews -->  
+        </main>
+
+        <!-- footer -->   
+        <footer class="bg-dark pt-3">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h3 class="main-content__title">Information</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">Partnership</a></li>
+                            <li><a href="#">My account</a></li>
+                            <li><a href="#">Cancel subscription</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h3 class="main-content__title">Follow us</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i> Facebook</a></li>
+                            <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+                            <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i> Twitter</a></li>
+                            <li><a href="#"><i class="fab fa-youtube" aria-hidden="true"></i> YouTube</a></li>
+                            <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div class="container-fluid p-3">
+                <div class="row">
+                    <div class="col mb-4">  
+                        <ul class="nav justify-content-center nav-tabs text-uppercase">
+                            <li class="nav-item text-md-center">
+                                <a class="nav-link menu-item menu-active" href="index.html"><i class="fas fa-home"></i> Welcome <span class="sr-only">(current)</span></a></li>
+                            <li class="nav-item text-md-center">
+                                <a class="nav-link menu-item" href="menu.html"><i class="fas fa-utensils"></i> Menu</a></li>
+                            <li class="nav-item text-md-center">
+                                <a class="nav-link menu-item" href="pictures.html"><i class="fas fa-camera-retro"></i> Pictures</a></li>
+                            <li class="nav-item text-md-center">
+                                <a class="nav-link menu-item" href="restaurant.html"><i class="fas fa-map-marker-alt"></i> Restaurant</a></li>
+                            <li class="nav-item text-md-center">
+                                <a class="nav-link menu-item" href="contact.html"><i class="fas fa-address-book"></i> Contact</a></li> 
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-5 offset-md-2">
+                        <p class="footer__copy small text-center">&copy; 2019 Johnson Sprl &ndash; All rights reserved.</p>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <p class="footer__policy small text-center">
+                            <a href="#" data-toggle="modal" data-target="#modal">Terms of use and privacy policy</a>.</p>
+                    </div>
+                </div>   
+            </div>
+
+        </footer>
+        <!-- end of footer -->   
+    </body>
+</html>
