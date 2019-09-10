@@ -1,7 +1,7 @@
 /* CSS fonts */
 @import url("https://fonts.googleapis.com/css?family=Trocchi:regular");
 
-body {font-family: "Trocchi", Arial, Helvetica, "Nimbus Sans L", sans-serif;}
+body {font-family: "Trocchi", "Arial", "Helvetica", sans-serif;}
 
 /* Rules for variables */
 :root {
@@ -36,6 +36,7 @@ header {
 
 /* Rules for hamburger icon */
 .line1, .line2, .line3 {
+    display: block;
     width: 23px;
     height: 3px;
     margin: 5px;
@@ -153,8 +154,6 @@ header {
     font-weight: normal;
     color: white;
 }
-/* #menu-products .img-square-wrapper {width: 50%;}
-#menu-products .img-square-wrapper img {object-fit: cover;} */
 
 /* Rules for pictures */
 #gallery figure {width: 50%;}
