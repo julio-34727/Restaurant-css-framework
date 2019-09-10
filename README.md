@@ -2,7 +2,6 @@
 ---
 
 ### Description
----
 
 Ce projet consiste  à concevoir un site web statique avec le framework css **Bootsrap 4** dans le cadre de la formation **Fullstack** chez Becode.
 
@@ -10,7 +9,6 @@ Vous pouvez cliquer sur ce [lien](https://julio-34727.github.io/restaurant-css-f
 
 
 ### Ressources
----
 
 * Images :
     * [pexel](https://www.pexels.com/)
