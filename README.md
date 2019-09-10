@@ -4,7 +4,7 @@
 ### Table des matières
 * [Description](#Description)
 * [Technologies](#Technologies)
-* [Ressources](https://julio-34727.github.io/restaurant-css-framework#Ressources)
+* [Ressources](#Ressources)
 * [Contact](#Contact)
 
 
