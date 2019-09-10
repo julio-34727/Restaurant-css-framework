@@ -2,10 +2,10 @@
 
 
 ### Table des matières
-* [Description](https://julio-34727.github.io/restaurant-css-framework#Description)
-* [Technologies](https://julio-34727.github.io/restaurant-css-framework#Technologies)
+* [Description](#Description)
+* [Technologies](#Technologies)
 * [Ressources](https://julio-34727.github.io/restaurant-css-framework#Ressources)
-* [Contact](https://julio-34727.github.io/restaurant-css-framework#Contact)
+* [Contact](#Contact)
 
 
 ### Description
