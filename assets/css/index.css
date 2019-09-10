@@ -1,0 +1,230 @@
+/* CSS fonts */
+@import url("https://fonts.googleapis.com/css?family=Grand+Hotel&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Trocchi:regular");
+
+body {font-family: "Trocchi", Arial, Helvetica, "Nimbus Sans L", sans-serif;}
+
+/* Rules for variables */
+:root {
+    --wine: #61122f;  /*rgb(97,18,47)*/
+    --logo-size: 100px;
+}
+
+/* Rules custom color */
+.text-wine {color: var(--wine);}
+.text-smoke {color: whitesmoke;}
+.bg-wine {background-color: var(--wine);}
+
+/* Typography */
+
+/* Rules for header */
+header {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.5)), 
+        url("../im/hero-1-800x531.jpg");}
+@media screen and (min-width: 768px) { /*for tablets and more size (pc, tv...)*/
+    header {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.5)), 
+            url("../im/hero-1-1280x850.jpg");
+    }    
+}
+header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+/* Rules for hamburger icon */
+.line1, .line2, .line3 {
+    width: 23px;
+    height: 3px;
+    margin: 5px;
+    transition: all .4s;
+    background-color: var(--wine);
+}
+.change .line1 {transform: rotate(-45deg) translate(-5px, 6px);}
+.change .line2 {opacity: 0;}
+.change .line3 {transform: rotate(45deg) translate(-5px, -6px);}
+
+/* Rules for logo svg */
+.logo__im {
+    width: min-content;
+    border: 3px solid var(--dark); 
+    border-radius: 50%;
+}
+.logo__im svg {
+    width: var(--logo-size);
+    height: var(--logo-size);
+}
+.logo__im svg text {
+    font-family: cursive;
+    font-size: small;
+    letter-spacing: 0.55px;
+    stroke: var(--dark);
+    fill: red;
+  }
+.logo__im svg #circle {fill: none;}
+
+/* Rules for nav-bar (nav-menu) and nav-links */
+.nav-menu {
+    background-color: var(--warning);
+    transition: all 0.7s;
+}  
+.menu-item {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: var(--wine);
+    /* transition: color .5s; */
+}
+.menu-item::after {
+    display: block;
+    content: "";
+    height: 1rem;;
+    border-bottom: 3px solid navy;
+    transform: scaleX(0);
+    transition: transform 0.25s ease-in-out;
+}
+.menu-active, .menu-item:hover {color: navy;}
+.menu-item:hover::after {transform: scaleX(1);}
+.menu-item::after {transform-origin: 0% 50%;}
+
+/* Rules for banner block */
+.banner {
+    position: absolute;
+    top: calc(50% + 50px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    color: whitesmoke;
+}
+.blend-content {mix-blend-mode: exclusion;}
+.banner-heading {
+    animation-name: banner-move;
+    animation-duration: 2s;
+}
+.banner-par {
+    animation-name: banner-move;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+}
+@keyframes banner-move {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.banner-ordered > * {
+    width: 280px;
+    color: var(--wine);
+    /* font-weight: bold;   */
+}
+
+/*
+ .banner-loc {
+    background-color: hsla(0,0%,100%,.3); 
+} 
+*/
+
+/* Rules for promo */
+#promo del {color: red;}
+
+/* Rules for all sections */
+.main-content__title {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid currentColor;
+}
+.wrapper {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+/* Rules for events section */
+#events .card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+.event-card li {font-size: 1rem;}
+.event-card em, .event-card a {color: var(--wine);}
+.event-card em {
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* Rules for menu */
+#menu-products .card-title span {
+    font-weight: normal;
+    color: white;
+}
+/* #menu-products .img-square-wrapper {width: 50%;}
+#menu-products .img-square-wrapper img {object-fit: cover;} */
+
+/* Rules for pictures */
+#gallery figure {width: 50%;}
+#gallery figure {
+    position: relative;
+    overflow: hidden;
+    transition: all .4s ease-in-out;
+    transform: scale(.75);
+}
+#gallery figcaption {
+    display: none;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: var(--success);
+    color: whitesmoke;
+}
+#gallery figure:focus figcaption,
+#gallery figure:hover figcaption {display: block;}
+#gallery figure:focus,
+#gallery figure:hover {
+    transform: scale(0.95);
+    z-index: 1;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent;
+    color: var(--dark);
+}
+.carousel-indicators-numbers li {
+    text-indent: 10px;
+    margin: 0 2px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 100%;
+    line-height: 30px;
+    color: whitesmoke;
+    background-color: var(--dark);
+    transition: all 0.25s ease;
+    opacity: 1;
+}
+.carousel-indicators-numbers li.active,
+.carousel-indicators-numbers li:hover {
+    margin: 0 2px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--wine);      
+}  
+
+/* Rules for restaurant */
+#location iframe {
+    display: block;
+    width: 100%;
+}
+
+/* Rules for contact */
+#contact button:hover, #newsletter button:hover {color: orangered;}
+
+/* Rules for footer */
+footer, .footer__copy, .footer__privacy {color: whitesmoke;}
+footer a,
+footer .menu-item, .footer__policy a {color: var(--warning);}
+footer .menu-item:hover {background-color: var(--warning);}

@@ -1,0 +1,20 @@
+<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <style>
+        svg {
+            width: 100px;
+            height: 100px;
+            border: 3px solid #343a40;
+            border-radius: 50%;
+        }
+        svg #circle {fill: none;} 
+        svg text {
+            font-family: cursive;
+            font-size: small;
+            letter-spacing: 0.55px;
+            stroke: #343a40;
+            fill: red;
+        }
+    </style>
+    <path d="M 16,40 a 25,25 0 1,1 0,1 z" id="circle" />
+    <text><textPath xlink:href="#circle">Johnson 4.14-becode&#11088;</textPath></text>
+</svg>
