@@ -149,6 +149,9 @@ header {
     font-weight: bold;
 }
 
+/* Rules for reviews */
+#reviews blockquote {background-color: white;}
+
 /* Rules for menu */
 #menu-products .card-title span {
     font-weight: normal;
